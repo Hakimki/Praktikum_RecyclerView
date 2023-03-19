@@ -1,5 +1,6 @@
 package com.example.belajarrecycler
 
+import android.annotation.SuppressLint
 import android.content.Context
 import android.media.Image
 import android.text.Layout
@@ -31,6 +32,7 @@ class PhotoAdapter(var context : Context) : RecyclerView.Adapter<PhotoAdapter.Vi
         }
     }
 
+    @SuppressLint("SuspiciousIndentation")
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PhotoAdapter.ViewHolder {
       var view = LayoutInflater.from(parent.context).inflate(R.layout.photo_layout, parent, false)
         return ViewHolder(view)
